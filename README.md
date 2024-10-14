@@ -1,6 +1,7 @@
 # RELATÓRIO DA SEMANA
 
 ## COISAS QUE APRENDI:
+*Dia 14/10 até 18/10*
 
 ### MODAL
 ##### Menu que aparece quando você clica no botão de login.  
