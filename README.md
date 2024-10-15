@@ -91,6 +91,10 @@ Menu de navegação que aparece ao clicar ou passar o mouse em cima de um botão
    
 <img src="https://github.com/user-attachments/assets/6e66445d-2e73-429b-a48a-ae7509f6eb6f" width=430px height=350px>
 
+### Como eu fiz:
+Fiz e personalizei o menu com HTML e CSS e os selecionei no algorítimo.
+No CSS fiz com que o menu aparecesse quando se passa o mouse em cima do botão "SOBRE". Além disso fiz com que no algorítimo que previne o botão de levar o usuário a página onde aparecem as opções. Também há 
+
 ### CRONOMETRO
 Cronometro funcional.  
 
@@ -99,3 +103,30 @@ Cronometro funcional.
 ### Como eu fiz:
 Fiz os elementos no HTML (botões e texto) e os selecionei no algorítimo.
 Assim adicionei um indentificador de evento que verifica quando o botão foi clicado. Se o botão for precionado ele ativa uma função que muda o conteúdo do texto de acordo com o tempo pressuposto na função setInterval. No outro botão tambem tem indentificador de evento. O primeiro pausa o setInterval e o outro, ao invés de intentificar se ele foi clicado, indentifica se ele foi clicado duas vezes e assim reinicia a contagem de tempo.
+
+   ```js
+      let cronometro = document.querySelector("[data-cronometro]");
+      const botaoP = document.querySelector('[data-botao="play"]');
+      const botaoS = document.querySelector('[data-botao="stop"]');
+      let timer;
+      let i = 0;
+      
+      botaoP.addEventListener("click", () => {
+        timer = setInterval(play, 1000);
+      });
+      
+      function play() {
+        i++;
+        cronometro.innerText = i;
+      }
+      
+      botaoS.addEventListener("click", () => {
+        clearInterval(timer);
+      });
+      
+      botaoS.addEventListener("dblclick", () => {
+        clearInterval(timer);
+        i = 0;
+        cronometro.innerText = i;
+      });
+   ```
