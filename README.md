@@ -93,7 +93,7 @@ Menu de navegação que aparece ao clicar ou passar o mouse em cima de um botão
 
 ### Como eu fiz:
 Fiz e personalizei o menu com HTML e CSS e os selecionei no algorítimo.
-No CSS fiz com que o menu aparecesse quando se passa o mouse em cima do botão "SOBRE". Além disso fiz com que no algorítimo que previne o botão de levar o usuário a página onde aparecem as opções. Também há 
+No CSS fiz com que o menu aparecesse quando se passa o mouse em cima do botão "SOBRE". Além disso fiz com que, no algorítimo, tivesse um método que previne o botão de levar o usuário à página onde aparecem as opções. Também há um sistema parecido com o modal, que faz que quando clicado adicione uma função "ativo", mostrando o conteúdo.
 
 ### CRONOMETRO
 Cronometro funcional.  
